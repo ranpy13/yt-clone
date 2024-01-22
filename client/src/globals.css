@@ -1,0 +1,32 @@
+.dark {
+  --bgMain: #181818;
+  --bgLighter: #202020;
+  --textColor: whitesmoke;
+  --textSoft: #aaaaaa;
+  --soft: #373737;
+}
+
+.light {
+  --bgMain: #f9f9f9;
+  --bgLighter: whitesmoke;
+  --textColor: black;
+  --textSoft: #6060606;
+  --soft: #f5f5f5;
+}
+
+.container {
+  display: flex;
+}
+
+.main {
+  flex: 4;
+  background-color: var(--bgMain);
+  color: var(--textColor);
+}
+
+.wrapper {
+  margin: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
