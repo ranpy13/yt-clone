@@ -5,21 +5,31 @@ import Menu from "./components/Menu"
 import './globals.css'
 import Navbar from "./components/Navbar"
 // import { darkTheme } from "./utils/Theme"
+import { BrowserRouter, Routes, Route} from "react-router-dom"
+import Home from "./pages/Home"
+import Video from "./pages/Video"
 
 
 const App = () => {
   return (
     <>
       <div className="container">
-        <Menu />
-        <div className="main">
-          <Navbar />
-          <div className="wrapper">
-            <div></div>
-            <div></div>
-            <div></div>
+        <BrowserRouter>
+          <Menu />
+          <div className="main">
+            <Navbar />
+            <div className="wrapper">
+              <Routes>
+                <Route path="/">
+                  <Route index element={<Home/>}/>
+                  <Route path="video">
+                    <Route path=":id" element={<Video/>}/>
+                  </Route>
+                </Route>
+              </Routes>
+            </div>
           </div>
-        </div>
+        </BrowserRouter>
       </div>
     </>
   )

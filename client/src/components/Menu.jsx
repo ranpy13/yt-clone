@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import styles from '../styles/menu.module.scss'
 import logo from '../images/logo.png'
 import { ThemeContext } from '../utils/ThemeContext'
+import { Link } from 'react-router-dom'
 
 
 const Menu = () => {
@@ -9,10 +10,12 @@ const Menu = () => {
   return (
     <div className={`${styles.container} ${theme}`}>
         <div className={styles.wrapper}>
-            <div className={styles.logo}>
-                <img src={logo} alt='logo'/>
-                <h1> YouTube </h1>
-            </div>
+            <Link to="/" style={{textDecoration: "none", color:"inherit"}}>
+                <div className={styles.logo}>
+                    <img src={logo} alt='logo'/>
+                    <h1> YouTube </h1>
+                </div>
+            </Link>
             <div className={styles.item}>
                 <div className={styles.items}>
                     <span className={`material-symbols-outlined ${styles.mso}`}>home</span> Home

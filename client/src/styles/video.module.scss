@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    gap: 24px;
+
+    .content {
+        flex: 5;
+
+        .videowrapper {
+            
+        }
+
+        .title {
+
+        }
+
+        .details {
+            .info {
+
+            }
+
+            .buttons {
+                button {
+
+                }
+            }
+        }
+    }
+
+    .recomm {
+        flex: 2;
+    }
+}
