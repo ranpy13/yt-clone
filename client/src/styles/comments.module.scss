@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+.container {
+    padding: 3% 2%;
+    padding-bottom: 0;
+    width: 98%;
+
+    .new, .old {
+        color: white;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: all ease 0.5s;
+
+        img {
+            aspect-ratio: 1;
+            border-radius: 50%;
+            width: 7%;
+            height: 7%;
+            object-fit: cover;
+            margin: 1%;
+        }
+
+        textarea {
+            border: none;
+            color: white;
+            border-bottom: 1px solid darkgrey;
+            line-height: 2;
+            width: 100%;
+            text-wrap: wrap;
+            word-wrap: none;
+            background-color: transparent;
+        }
+
+        textarea:focus-visible {
+            outline: none;
+        }
+
+        button {
+            background-color: transparent;
+            font-weight: bold;
+            border: none;
+            color: #3c73ff;
+            border-radius: 25px;
+            padding: 5px 10px;
+
+            span {
+                transition: all ease 0.5s;
+                font-size: 35px;
+                opacity: 0;
+                cursor: pointer;
+            }
+        }
+
+        h3, p {
+            margin: 0;
+        }
+    }
+
+    .new:focus-within {
+        button span {
+            transition: all ease 0.5s;
+            opacity: 1;
+        }
+    }
+
+    .old, .btns {
+        img{
+            align-self: flex-start;
+        }
+
+        h3 {
+            color: aliceblue;
+        }
+
+        p {
+            color: #b3b3b3;
+        }
+    }
+
+    .btns {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 5px 100px;
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        span {
+            font-weight: 200;
+        }
+    }
+}
