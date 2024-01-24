@@ -10,34 +10,34 @@ const RecoCard = () => {
             <h6>Random Youtuber</h6>
             <p>234K • 4 days</p>
             <p className={styles.desc}>
-            Video uploading app design using React and Styled Components. Youtube clone design with hooks and functional component. React video player.
+                Video uploading app design using React and Styled Components. Youtube clone design with hooks and functional component. React video player.
 
-You are watching the 1st part.
-Watch the second part:   
+                You are watching the 1st part.
+                Watch the second part:   
 
- • React Node.js Video Sharing App Full ...  
+                • React Node.js Video Sharing App Full ...  
 
-If it is valuable to you, you can support Lama Dev.
-Join:   
+                If it is valuable to you, you can support Lama Dev.
+                Join:   
 
- / @lamadev  
-Buy me a coffee: https://www.buymeacoffee.com/lamadev
+                / @lamadev  
+                Buy me a coffee: https://www.buymeacoffee.com/lamadev
 
-Source Code: https://github.com/safak/youtube2022/...
+                Source Code: https://github.com/safak/youtube2022/...
 
-Join Lama Dev groups
-Facebook:  
+                Join Lama Dev groups
+                Facebook:  
 
- / lamadev  
-Instagram:  
+                / lamadev  
+                Instagram:  
 
- / lamawebdev  
-Discord:  
+                / lamawebdev  
+                Discord:  
 
- / discord  
-Twitter:  
+                / discord  
+                Twitter:  
 
- / lamawebdev  
+                / lamawebdev  
             </p>
         </div>
     </div>

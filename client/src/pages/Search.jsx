@@ -6,7 +6,7 @@ const Search = () => {
   return (
     <div className={styles.searchpage}>
         {Array.from({ length: 20 }).map(i => 
-            <RecoCard/>
+            <RecoCard/> 
         )}
     </div>
   )

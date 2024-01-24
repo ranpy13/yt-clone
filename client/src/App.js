@@ -27,7 +27,7 @@ const App = () => {
                     <Route path=":id" element={<Video/>}/>
                   </Route>
                   <Route path="search">
-                    <Route path=":query" element={<Search/>}/>
+                    <Route path=":query" element={<Search/>}/> 
                   </Route>
                 </Route>
               </Routes>
