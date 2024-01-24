@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar"
 import { BrowserRouter, Routes, Route} from "react-router-dom"
 import Home from "./pages/Home"
 import Video from "./pages/Video"
+import Search from "./pages/Search"
 
 
 const App = () => {
@@ -24,6 +25,9 @@ const App = () => {
                   <Route index element={<Home/>}/>
                   <Route path="video">
                     <Route path=":id" element={<Video/>}/>
+                  </Route>
+                  <Route path="search">
+                    <Route path=":query" element={<Search/>}/>
                   </Route>
                 </Route>
               </Routes>

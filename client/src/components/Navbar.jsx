@@ -15,7 +15,9 @@ const Navbar = () => {
 
         <div className={styles.search}>
           <input placeholder="Search for anything..."/>
-          <span className="material-symbols-outlined">search</span>
+          <Link to="/search/test" style={{color: "inherit"}}>
+            <span className="material-symbols-outlined">search</span>
+          </Link>
         </div>
 
         <button><span className="material-symbols-outlined">account_circle</span>&nbsp; SIGN IN</button>

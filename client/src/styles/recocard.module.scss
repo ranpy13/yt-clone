@@ -31,5 +31,30 @@
             font-size: small;
         }
 
+        .desc {
+            display: none;
+        }
+
+    }
+}
+
+.searchpage {
+    img {
+        width: 35%;
+    }
+
+    .info, .info h6{
+        font-size: x-large;
+    }
+
+    .info p {
+        font-size: large;
+    }
+
+    .container>.info>.desc {
+        display: block;
+        width: 95%;
+        margin-top: 1.5%;
+        font-size: small;
     }
 }
