@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+
+.mso {
+    font-size: 30px;
+    font-weight: 300;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 30;
+}
+
+.container {
+    position: sticky;
+    top: 0;
+    flex: 1;
+    background-color: #202020;
+    height: 100vh;
+    color: white;
+
+    .wrapper {
+        padding: 18px 26px;
+        height: 90%;
+        padding-top: 10px;
+
+        .logo {
+            position: sticky;
+            top: 10px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            height: 7vh;
+            margin-top: 0;
+            margin-left: 30px;
+            margin-bottom: 25px;
+
+            img {
+                height: 45px;
+                width: auto;
+            }
+
+            h1 {
+                font-family: 'Oswald';
+                font-weight: 600;
+            }
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            scrollbar-width: none;
+            height: 85vh;
+            overflow: scroll;
+            overflow-x: overlay;
+
+            hr {
+                width: 100%;
+                margin: 15px 0px;
+                border: 0.5px solid #373737;
+            }
+
+            .items {
+                padding-left: 15px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                cursor: pointer;
+                font-size: 21px;
+                font-weight: 500;
+            }
+
+            .signbtn{
+                width: 90%;
+                align-items: center;
+
+                p {
+                    color: #9c9c9c;
+                    margin-bottom: 5px;
+                }
+
+                button{
+                    margin: auto;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    padding: 5px 15px;
+                    background-color: transparent;
+                    border: 1px solid #3ea6ff;
+                    color: #3ea6ff;
+                    border-radius: 25px;
+                    font-weight: 500;
+                    margin-top: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

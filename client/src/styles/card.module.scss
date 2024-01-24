@@ -1,0 +1,51 @@
+.container {
+    aspect-ratio: 4/3;
+    // height: 30vh;
+    background-color: transparent;
+    width: 30%;
+    border-radius: 10px;
+    margin: 10px;
+    // box-shadow: 0 0 3px 2px #535353;
+    cursor: pointer;
+    margin-bottom: 25px;
+
+    img {
+        aspect-ratio: 16/9;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .caption {
+        display: flex;
+
+        img {
+            aspect-ratio: 1;
+            border-radius: 50%;
+            width: 15%;
+            height: 15%;
+            object-fit: cover;
+            margin: 1%;
+        }
+
+        h4, h5 {
+            color: white;
+            margin: 1% 5%;
+        }
+
+        h5 {
+            color: #cdcdcd;
+        }
+
+        p {
+            font-size: small;
+            margin: 1% 5%;
+            color: darkgray;
+        }
+
+        div {
+            width: 100%;
+        }
+    }
+}

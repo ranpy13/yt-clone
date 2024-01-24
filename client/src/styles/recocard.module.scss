@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    width: 100%;
+    margin: 5% 1%;
+    gap: 10px;
+    cursor: pointer;
+
+    img {
+        aspect-ratio: 16/9;
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .info {
+        color: whitesmoke;
+
+        h4 {
+            margin: 0;
+        }
+
+        h6 {
+            color: darkgray;
+            margin: 0;
+        }
+
+        p {
+            color: gray;
+            margin: 0;
+            font-size: small;
+        }
+
+        .desc {
+            display: none;
+        }
+
+    }
+}
+
+.searchpage {
+    img {
+        width: 35%;
+    }
+
+    .info, .info h6{
+        font-size: x-large;
+    }
+
+    .info p {
+        font-size: large;
+    }
+
+    .container>.info>.desc {
+        display: block;
+        width: 95%;
+        margin-top: 1.5%;
+        font-size: small;
+    }
+} 
