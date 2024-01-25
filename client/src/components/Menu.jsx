@@ -35,7 +35,9 @@ const Menu = () => {
                 </div>
                 <div className={styles.signbtn}>
                     <p>Sign in to like videos, comment and subscribe</p>
-                    <button><span className="material-symbols-outlined">account_circle</span>&nbsp; SIGN IN</button>
+                    <Link to="/login" style={{color: "inherit", textDecoration: "none"}}>
+                        <button><span className="material-symbols-outlined">account_circle</span>&nbsp; SIGN IN</button>
+                    </Link>
                 </div>
                 <hr/>
                 <p style={{color: 'grey'}}>BEST OF YouTube ⨠</p>

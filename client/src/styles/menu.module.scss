@@ -51,7 +51,7 @@
         .item {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 2px;
             scrollbar-width: none;
             height: 85vh;
             overflow: scroll;
@@ -64,13 +64,21 @@
             }
 
             .items {
-                padding-left: 15px;
+                padding: 7px 15px;
+                border-radius: 5px;
                 display: flex;
                 align-items: center;
-                gap: 20px;
+                gap: 10px;
                 cursor: pointer;
                 font-size: 21px;
                 font-weight: 500;
+                transition: all ease 0.5s;
+
+                &:hover {
+                    transition: all ease 0.5s;
+                    color: #d2d2d2;
+                    background-color: #373737;
+                }
             }
 
             .signbtn{

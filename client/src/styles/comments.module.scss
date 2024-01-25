@@ -26,15 +26,19 @@
             border: none;
             color: white;
             border-bottom: 1px solid darkgrey;
-            line-height: 2;
+            line-height: 1;
             width: 100%;
             text-wrap: wrap;
-            word-wrap: none;
+            word-wrap: break-word;
             background-color: transparent;
-        }
+            font-size: large;
+            font-family: 'Poppins';
+            resize: none;
+            height: 3rem;
 
-        textarea:focus-visible {
-            outline: none;
+            &:focus-visible {
+                outline: none;
+            }
         }
 
         button {
@@ -55,6 +59,16 @@
 
         h3, p {
             margin: 0;
+        }
+
+        .topinfo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            p {
+                font-size: small;
+            }
         }
     }
 

@@ -19,8 +19,9 @@ const Navbar = () => {
             <span className="material-symbols-outlined">search</span>
           </Link>
         </div>
-
-        <button><span className="material-symbols-outlined">account_circle</span>&nbsp; SIGN IN</button>
+        <Link to="/login" style={{textDecoration: "none", color:"inherit"}}>
+          <button><span className="material-symbols-outlined">account_circle</span>&nbsp; SIGN IN</button>
+        </Link>
       </nav>
   )
 }

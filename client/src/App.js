@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route} from "react-router-dom"
 import Home from "./pages/Home"
 import Video from "./pages/Video"
 import Search from "./pages/Search"
+import Login from "./pages/Login"
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
               <Routes>
                 <Route path="/">
                   <Route index element={<Home/>}/>
+                  <Route path="login" element={<Login/>}/>
                   <Route path="video">
                     <Route path=":id" element={<Video/>}/>
                   </Route>

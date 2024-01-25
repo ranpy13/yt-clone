@@ -8,6 +8,12 @@
     // box-shadow: 0 0 3px 2px #535353;
     cursor: pointer;
     margin-bottom: 25px;
+    transition: all ease 0.25s;
+
+    &:hover {
+        transition: all ease 0.5s;
+        transform: scale(1.05);
+    }
 
     img {
         aspect-ratio: 16/9;

@@ -4,6 +4,12 @@
     margin: 5% 1%;
     gap: 10px;
     cursor: pointer;
+    transition: all ease 0.25s;
+
+    &:hover {
+        transition: all ease 0.5s;
+        transform: scale(1.025);
+    }
 
     img {
         aspect-ratio: 16/9;
@@ -39,6 +45,10 @@
 }
 
 .searchpage {
+    .container {
+        gap: 25px;
+    }
+
     img {
         width: 35%;
     }

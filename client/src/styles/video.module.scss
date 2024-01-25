@@ -70,6 +70,13 @@
                     font-weight: bold;
                     font-size: large;
                     cursor: pointer;
+                    transition: all ease 0.25s;
+
+                    &:hover {
+                        transition: all ease 0.5s;
+                        transform: scale(1.025);
+                        background-color: #dd0007;
+                    }
                 }
                 
             }
