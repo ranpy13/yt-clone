@@ -17,6 +17,7 @@ const UserSchema = new mongoose.Schema({
     },
     img: {
         type: String,
+        default: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg",
     },
     subscribers: {
         type: Number,

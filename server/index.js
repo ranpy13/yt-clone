@@ -22,8 +22,8 @@ const connect = () => {
     })
 }
 
+app.use(cookieParser())
 app.use(express.json())
-app.use(cookieParser)
 // app.use(bodyParser)
 app.use("/api/auth", authRoute)
 app.use("/api/users", userRoutes)
@@ -40,7 +40,7 @@ app.use((err, req, res, next) => {
     })
 })
 
-app.listen(8000, () => {
+app.listen(8800, () => {
     connect()
     console.log("connected")
 })

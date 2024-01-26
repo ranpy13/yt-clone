@@ -17,15 +17,21 @@ const Menu = () => {
                 </div>
             </Link>
             <div className={styles.item}>
-                <div className={styles.items}>
-                    <span className={`material-symbols-outlined ${styles.mso}`}>home</span> Home
-                </div>
-                <div className={styles.items}>
-                    <span className={`material-symbols-outlined ${styles.mso}`}>explore</span> Explore
-                </div>
-                <div className={styles.items}>
-                    <span className={`material-symbols-outlined ${styles.mso}`}>subscriptions</span> Subscriptions
-                </div>
+                <Link to="/" style={{textDecoration: "none", color:"inherit"}}>
+                    <div className={styles.items}>
+                        <span className={`material-symbols-outlined ${styles.mso}`}>home</span> Home
+                    </div>
+                </Link>
+                <Link to="trends" style={{textDecoration: "none", color:"inherit"}}>
+                    <div className={styles.items}>
+                        <span className={`material-symbols-outlined ${styles.mso}`}>explore</span> Explore
+                    </div>
+                </Link>
+                <Link to="sub" style={{textDecoration: "none", color:"inherit"}}>
+                    <div className={styles.items}>
+                        <span className={`material-symbols-outlined ${styles.mso}`}>subscriptions</span> Subscriptions
+                    </div>
+                </Link>
                 <hr/> 
                 <div className={styles.items}>
                     <span className={`material-symbols-outlined ${styles.mso}`}>video_library</span> Library
